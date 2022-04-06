@@ -275,6 +275,7 @@ margin-bottom: 100px;
 .wrap {
 	display: flex;
 	flex-wrap: wrap;
+	width: 100vw;
 
 }
 .wrap__item {
@@ -283,7 +284,7 @@ margin-bottom: 100px;
 	justify-content: center;
 	align-items: center;
 	flex:1;
-	max-width: 680px;
+	max-width: 800px;
 }
 .wrap__item-img {
 	flex: 1;
