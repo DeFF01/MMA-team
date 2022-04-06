@@ -14,7 +14,7 @@ body{
 	
 }
 .container{
-	width: 1290px;
+	max-width: 1290px;
 	margin: 0 auto;
 }
 
@@ -85,44 +85,9 @@ body{
 	border-color: rgb(146, 146, 146);
 }
 
-/*___Первая секция___*/
 
-.content{
-	margin-bottom: 150px;
-}
-
-.info {
-background: url(../img/boxer.png) no-repeat center;
-}
-.info__name {
-	font-size: 72px;
-	font-weight: 700;
-	text-align-last: justify;
-	text-transform: uppercase;
-	line-height: 86px;
-	margin-bottom: 197px;
-}
-.info__team {
-	font-family: Ubuntu ;
-	font-size: 24px;
-	width: 360px;
-	font-weight: 500;
-	line-height: 31.2px;
-	padding-top: 85px;
-	margin-bottom: 155px;
-}
-.info__box-bottom{
-	display: flex;
-	align-items: center;
-}
-.info__history {
-
-	width: 410px;
-	font-weight: 500;
-	line-height: 27px;
-	margin-right: 490px;
-}
-.info__link{
+/*_____Кнопка записи, будет во многих секциях___*/
+.link{
 	display: flex;
 	align-items: center;
 	width: 277px;
@@ -134,20 +99,62 @@ background: url(../img/boxer.png) no-repeat center;
 	transition: 0.2s ease-in-out;
 	text-decoration: none;
 }
-.info__link-text{
+.link-text{
 	font-size: 18px;
 	color: #ffff;
 	text-transform: uppercase;
 	font-weight: 500;
 }
-.info__link_icon{
+.link-icon{
 	margin:0  55px 0 40px;
 }
 /*___Анимация кнопки записи___*/
 
-.info__link:hover{
+.link:hover{
 	box-shadow: 0 0 10px 0 #F9BA50 inset, 0 0 10px 4px #F9BA50;
 	background: none	;
+}
+
+
+
+
+/*___Первая секция___*/
+
+.badoa{
+	margin-bottom: 150px;
+}
+
+.info {
+background: url(../img/boxer.png) no-repeat center;
+padding-top: 85px;
+}
+.info__name {
+	font-size: 72px;
+
+	text-align-last: justify;
+	text-transform: uppercase;
+	line-height: 86px;
+	margin-bottom: 197px;
+}
+.info__team {
+	font-family: Ubuntu ;
+	font-size: 24px;
+	width: 360px;
+	font-weight: 500;
+	line-height: 31.2px;
+
+	margin-bottom: 155px;
+}
+.info__box-bottom{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.info__history {
+
+	width: 410px;
+	font-weight: 500;
+	line-height: 27px;
 }
 
 /*___Вторая секция___*/
@@ -157,6 +164,7 @@ background: url(../img/boxer.png) no-repeat center;
 }
 .school {
 	display: flex;
+	flex-wrap: wrap;
 }
 .school__box-posicion{
 	position: relative;
@@ -169,10 +177,15 @@ background: url(../img/boxer.png) no-repeat center;
     top: 500px;
     left: 275px;
 }
+
+
 .school__icon {
 	position: absolute;
-	top: 518px;
-    left: 291px;
+	bottom: -115px;
+    right: -50px;
+	border: 2px #ffff solid;
+	border-radius: 50%;
+	padding: 20px;
 }
 .shool__logo {
 	font-size: 72px;
@@ -200,7 +213,7 @@ width: 520px;
 	margin-bottom: 150px;
 }
 
-.trainer__logo {
+.trainer__title {
 
 font-size: 72px;
 font-weight: 700;
@@ -210,42 +223,36 @@ margin-bottom: 100px;
 }
 .trainer__box {
 	display: flex;
+	flex-wrap: wrap;
 }
 .trainer__man {
 	margin-right: 15px;
 	position: relative;
 }
-.trainer__box-tex {
-	position: relative;
-	display: flex;
 
-}
+
 .trainer__text-transparent {
 font-size: 64px;
 font-weight: 700;
 line-height: 77px;
 -webkit-text-fill-color:transparent;
 -webkit-text-stroke:2px #ffff;
+margin-top: -50px
 
-margin-right: 10px;
-    position: absolute;
-	top: -50px;
+
 }
 .trainer__text {
 font-size: 64px;
 font-weight: 700;
 line-height: 77px;
-position: absolute;
-top: -50px;
-left: 220px;
+margin-top: -50px
 }
 .trainer__woman {
 	margin-left: 15px;
-	
 }
 .trainer__woman-text {
 	margin-top: 65px;
-	width: 560px;
+	max-width: 630px;
 }
 
 /*___Четвертая секция___*/
@@ -263,11 +270,44 @@ font-weight: 700;
 line-height: 86px;
 margin-bottom: 100px;
 }
+
+
+.wrap {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.wrap__item {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex:1;
+	max-width: 680px;
+}
+.wrap__item-img {
+	flex: 1;
+}
+.wrap__item-text {
+	position: absolute;
+	position: absolute;
+	-webkit-text-fill-color:transparent;
+	-webkit-text-stroke:2px #ffff;
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 58px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+
+
 .directions__box {
 
 	display: flex;
-	width: 99.6vw;
-    height: 70vh;
+	width: 100%;
+	min-height: 600px;
 }
 .directions__style {
 	position: relative;
@@ -276,28 +316,28 @@ margin-bottom: 100px;
     align-items: center;
 	width: 100%;
 	opacity: 0.5;
-
 	transition: .3s ease-in-out;
 
 }
 .directions__style:hover{
 	opacity: 1;
 }
-.boxing {
-	background: url(../img/box_back.png) no-repeat;
+.directions__style-boxing {
+	background: url(../img/box_back.png),no-repeat;
 	background-size: cover;
 }
 
-.kickboxing {
-	background: url(../img/kikboxing_back.png)no-repeat;
+.directions__style-kickboxing {
+	background: url(../img/kikboxing_back.png),no-repeat;
 	background-size: cover;
 }
-.MMA {
-	background: url(../img/mma_back.png)no-repeat;
+
+.directions__style-MMA {
+	background: url(../img/mma_back.png),no-repeat;
 	background-size: cover;
 }
-.jiu-jitsu {
-	background: url(../img/jiu-jitsu_back.png)no-repeat;
+.directions__style-jiu-jitsu {
+	background: url(../img/jiu-jitsu_back.png),no-repeat;
 	background-size: cover;
 }
 
@@ -308,10 +348,11 @@ max-width: 600px;
 	position: absolute;
 	-webkit-text-fill-color:transparent;
 	-webkit-text-stroke:2px #ffff;
-	font-size: 32px;
+	font-size: 36px;
 	font-weight: 500;
 	line-height: 58px;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 /*___Пятая секция___*/
@@ -331,12 +372,8 @@ margin-bottom: 100px;
 	flex-wrap: wrap;
 }
 .offer{
-	display: flex;
-
 	background-color:#17171A;
 	margin: 15px;
-}
-.offer__box{
 	padding: 25px;
 }
 
@@ -362,7 +399,7 @@ line-height: 27px;
 width: 350px;
 margin-bottom: 60px;
 }
-.offer__money {
+.offer__cost {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -386,7 +423,7 @@ text-decoration: line-through;
 }
 
 /*___Шестая секция___*/
-.instagramm {
+.instagram {
 	margin-bottom: 150px;
 }
 
@@ -408,7 +445,7 @@ margin-bottom: 100px;
 
 /*___Подвал сайта___*/
 .footer {
-	margin-bottom: 50px;
+	padding-bottom: 80px;
 }
 .basement {
 	display: flex;
@@ -461,31 +498,29 @@ line-height: 24px;
 text-decoration: none;
 color: #ffff;
 }
-.media__confidentiality:hover{
-	color: rgb(146, 146, 146);
-	transition: color 0.2s;
+
+
+.footer__navigation_logo {
+	margin: 63px 0 63px;
 }
-.site-sections__logo {
-	margin: 63px 0 40px;
-}
-.site-section__link {
+.footer__navigation-link {
 	margin: 30px 0 30px;
 	text-decoration: none;
 	color: #ffff;
 	list-style-type: none;
 }
-.site-section__link:hover{
+.footer__navigation-link:hover{
 	color: rgb(146, 146, 146);
 	transition: color 0.2s;
 }
 
 .contacts__logo{
-margin: 63px 0 40px;
+margin: 63px 0 63px;
 font-size: 20px;
 font-weight: 500;
 line-height: 24px;
 }
-.contacts__way {
+.contacts__title {
 font-size: 12px;
 font-weight: 700;
 line-height: 14px;
@@ -494,16 +529,8 @@ margin-bottom: 15px;
 }
 .contacts__box{
 	margin-bottom: 30px;
+}
+.contacts__link{
 	text-decoration: none;
 	color: #ffff;
 }
-.contacts__connection{
-	text-decoration: none;
-	color: #ffff;
-}
-.contacts__connection:hover{
-	color: rgb(146, 146, 146);
-	transition: color 0.2s;
-}
-
-
