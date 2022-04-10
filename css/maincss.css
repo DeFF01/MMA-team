@@ -550,8 +550,8 @@ margin-bottom: 15px;
  }
 
  .info__link, .school__link{
-	 margin: 25px;
-	 width: 350px;
+	 margin: 15px 0 0 15px;
+	 width: 290px;
  }
 
  .offer__in-week{
