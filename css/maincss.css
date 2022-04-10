@@ -562,4 +562,8 @@ margin-bottom: 15px;
 .instagram__img{
 	margin: 15px;
 }
+.wrap{
+	flex-wrap: wrap;
+}
+
 }
