@@ -7,14 +7,14 @@ html{
 }
 body{
 	box-sizing: border-box;
-	font-size: 18px;
+	font-size: 14px;
 	font-family: Ubuntu;
 	background-color: black;
 	color: #ffff;
 	
 }
 .container{
-	max-width: 1290px;
+	max-width: 360px;
 	margin: 0 auto;
 }
 
@@ -28,8 +28,7 @@ body{
 	
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
+	align-items: center
 	
 
 }
@@ -41,7 +40,7 @@ body{
 	margin-right: 20px;
 }
 .hat__address-text {
-	white-space: break-spaces;
+	width: 380px;
 	line-height: 2em;
 	font-size: 16px;
 }
@@ -128,7 +127,6 @@ body{
 .info {
 background: url(../img/boxer.png) no-repeat center;
 padding-top: 85px;
-
 }
 .info__name {
 	font-size: 72px;
@@ -149,10 +147,8 @@ padding-top: 85px;
 }
 .info__box-bottom{
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	
 }
 .info__history {
 
@@ -191,7 +187,6 @@ padding-top: 85px;
 	border: 2px #ffff solid;
 	border-radius: 50%;
 	padding: 20px;
-	
 
 }
 
@@ -234,8 +229,7 @@ font-size: 18px;
 font-weight: 500;
 line-height: 31px;
 text-align: left;
-max-width: 520px;
-white-space: normal;
+width: 520px;
 }
 .school__link{
 	margin: 80px 0 0 119px;
@@ -261,12 +255,9 @@ margin-bottom: 100px;
 }
 .trainer__man {
 	margin-right: 15px;
-	
 	position: relative;
 }
-.trainer__man-img, .trainer__woman-img{
-	width: 100%;
-}
+
 
 .trainer__text-transparent {
 font-size: 64px;
@@ -286,7 +277,6 @@ margin-top: -50px
 }
 .trainer__woman {
 	margin-left: 15px;
-
 }
 .trainer__woman-text {
 	margin-top: 65px;
@@ -311,7 +301,6 @@ margin-bottom: 100px;
 
 .wrap {
 	display: flex;
-	flex-wrap: wrap;
 }
 
 .wrap__item {
@@ -514,32 +503,4 @@ margin-bottom: 15px;
 .contacts__link{
 	text-decoration: none;
 	color: #ffff;
-}
-
-
-@media (max-width: 650px) {
-
-.info__name{
-	font-size: 46px;
-}
-
-	.directions__logo, .trainer__title, .shool__title, .schedule__logo, .instagram__logo{
-	 font-size: 40px;
-	 text-align: left;
-
- }
- .shool__text{
-	 margin: 0;
- }
- .school__img::before{
-	 background: none;
-	 border: none;
- }
- .wrap__item-text{
-	 font-size: 40px;
- }
- .info__link, .school__link{
-	 margin: 25px;
-	 width: 350px;
- }
 }
