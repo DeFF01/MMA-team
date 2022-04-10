@@ -422,15 +422,19 @@ margin-bottom: 100px;
 }
 .instagram__img {
 	margin: 15px 0 15px 0;
+	max-width: 410px;
+	width: 100%;
 }
 
 /*___Подвал сайта___*/
 .footer {
 	padding-bottom: 80px;
+
 }
 .basement {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .media {
 	width: 400px;
@@ -523,23 +527,39 @@ margin-bottom: 15px;
 	font-size: 46px;
 }
 
-	.directions__logo, .trainer__title, .shool__title, .schedule__logo, .instagram__logo{
-	 font-size: 40px;
-	 text-align: left;
+.directions__logo, .trainer__title, .shool__title, .schedule__logo, .instagram__logo{
+ font-size: 40px;
+ text-align: left;
 
  }
+
  .shool__text{
 	 margin: 0;
  }
+
  .school__img::before{
 	 background: none;
 	 border: none;
  }
+
  .wrap__item-text{
 	 font-size: 40px;
  }
+
  .info__link, .school__link{
 	 margin: 25px;
 	 width: 350px;
  }
+
+ .offer__in-week{
+	margin-bottom: 25px;
+ }
+
+ .offer__text{
+	font-size: 16px;
+	width: 250px;
+}
+.instagram__img{
+	margin: 15px;
+}
 }
