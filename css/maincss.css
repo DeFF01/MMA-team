@@ -130,17 +130,25 @@ body{
 }
 
 .info {
+
 background: url(../img/boxer.png) no-repeat center;
 padding-top: 85px;
-
 }
 .info__name {
 	font-size: 72px;
-
+	width: 100%;
 	text-align-last: justify;
 	text-transform: uppercase;
 	line-height: 86px;
 	margin-bottom: 197px;
+}
+.info__box{
+	background: url(../img/boxer.png) no-repeat center;
+height: 750px;
+display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .info__team {
 	font-family: Ubuntu ;
@@ -148,10 +156,10 @@ padding-top: 85px;
 	width: 360px;
 	font-weight: 500;
 	line-height: 31.2px;
-
 	margin-bottom: 155px;
 }
 .info__box-bottom{
+	width:100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -172,11 +180,10 @@ padding-top: 85px;
 }
 .school {
 	display: flex;
-	flex-wrap: wrap;
 }
 
 .school__img{
-	background: url(../img/perchatka.png);
+	background: url(../img/perchatka.png) no-repeat;
 	width: 650px;
 	z-index: 1;
 	position: relative;
@@ -214,7 +221,9 @@ padding-top: 85px;
     top: 500px;
     left: 275px;
 }
-
+.school__history{
+	margin-left: 119px;
+}
 
 .school__icon {
 	position: absolute;
@@ -224,16 +233,16 @@ padding-top: 85px;
 	border-radius: 50%;
 	padding: 20px;
 }
-.shool__title {
+.school__title {
 	font-size: 72px;
 	font-weight: 700;
 	line-height: 86px;
-	margin:50px 0 60px 119px;
+	margin:50px 0 60px 0;
 	text-transform: uppercase;
 
 }
-.shool__text {
-	margin-left: 119px;
+.school__text {
+
 font-size: 18px;
 font-weight: 500;
 line-height: 31px;
@@ -242,13 +251,13 @@ max-width: 520px;
 white-space: normal;
 }
 .school__link{
-	margin: 80px 0 0 119px;
+	margin-top: 80px
 }
 
 /*___Третья секция___*/
 
 .trainers {
-	margin-bottom: 150px;
+	margin-bottom: 190px;
 }
 
 .trainer__title {
@@ -261,7 +270,7 @@ margin-bottom: 100px;
 }
 .trainer__box {
 	display: flex;
-	flex-wrap: wrap;
+
 }
 .trainer__man {
 	margin-right: 15px;
@@ -293,7 +302,7 @@ margin-top: -50px
 
 }
 .trainer__woman-text {
-	margin-top: 65px;
+	margin-top: 30px;
 	max-width: 630px;
 }
 
@@ -354,6 +363,7 @@ margin-bottom: 100px;
 .schedule__box {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-around;
 }
 .offer{
 	background-color:#17171A;
@@ -421,7 +431,7 @@ margin-bottom: 100px;
 .instagram__box {
 	display: flex;
 	flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .instagram__img {
 	margin: 15px 0 15px 0;
@@ -437,7 +447,7 @@ margin-bottom: 100px;
 .basement {
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
+
 }
 .media {
 	width: 400px;
@@ -450,6 +460,7 @@ font-weight: 500;
 line-height: 27px;
 text-align: left;
 margin-bottom: 42px;
+text-align: justify;
 
 }
 .media__box-link {
@@ -521,52 +532,4 @@ margin-bottom: 15px;
 .contacts__link{
 	text-decoration: none;
 	color: #ffff;
-}
-
-
-@media (max-width: 650px) {
-
-.info__name{
-	font-size: 46px;
-}
-
-.directions__logo, .trainer__title, .shool__title, .schedule__logo, .instagram__logo{
- font-size: 40px;
- text-align: left;
-
- }
-
- .shool__text{
-	 margin: 0;
- }
-
- .school__img::before{
-	 background: none;
-	 border: none;
- }
-
- .wrap__item-text{
-	 font-size: 40px;
- }
-
- .info__link, .school__link{
-	 margin: 15px 0 0 15px;
-	 width: 290px;
- }
-
- .offer__in-week{
-	margin-bottom: 25px;
- }
-
- .offer__text{
-	font-size: 16px;
-	width: 250px;
-}
-.instagram__img{
-	margin: 15px;
-}
-.wrap{
-	flex-wrap: wrap;
-}
-
 }
