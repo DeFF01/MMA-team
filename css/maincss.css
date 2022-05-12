@@ -533,3 +533,7 @@ margin-bottom: 15px;
 	text-decoration: none;
 	color: #ffff;
 }
+
+.confidentiality{
+	display: none;
+}

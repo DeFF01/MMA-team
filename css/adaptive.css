@@ -161,6 +161,26 @@
 		}
 	@media only screen and (max-width: 480px) {
 	}
+
+.badoa, .academy, .trainers, .direction, .timetable-of-classes{
+	margin-bottom: 55px;
+}
+.directions__logo, .schedule__logo{
+	margin-bottom: 0;
+}
+.schedule__logo{
+	line-height: 42px;
+}
+.trainer__title{
+	margin-bottom: 30px;
+}
+.trainer__man, .trainer__woman{
+	margin: 10px 0;
+}
+
+.header {
+    padding: 10px 0 25px;
+}
 	.confidentiality{
 		text-align: center;
 	}
@@ -177,16 +197,26 @@
 .info__history{
 	font-size: 14px;
 }
+.school__history{
+	margin-left: 0px;
+}
 .school__title{
 	font-size: 44px;
-	margin-bottom: 355px;
-
+	margin: 0 0 470px 0;
+}
+.school__text{
+	font-size: 16px;
+    font-weight: 100;
 }
 .school__title::before{
-	background-size: 250px;
+	background-size: 345px;
 }
+
 .school__link{
-	width: 235px;
+	margin: 15px 0 0 0;
+}
+.info__link{
+	width: 277px;
 }
 .link-icon{
 	margin: 0 35px 0 20px;
@@ -210,23 +240,62 @@
 	width: 100%;
 	text-align: justify;
 	font-size: 15px;
+	margin-bottom: 15px;
+}
+.offer__in-week{
+	margin-bottom: 16px;
+}
+.offer__week{
+	font-size: 11px;
 }
 .offer__day{
-	font-size: 23px;
+	font-size: 28px;
 }
 .instagram__logo{
 	font-size: 34px;
 	line-height: 50px;
+	margin-bottom: 20px;
 }
-
+.offer__link {
+	width: 230px;
+}
 .instagram__img{ 
 	width:45% ;
 }
+
 .delite{
 	display: none;
 }
 .instagram {
 margin-bottom: 80px;
+}
+
+.media__text{
+	font-weight: 100;
+}
+.media__box-link{
+	margin-bottom: 20px;
+}
+.footer__navigation{
+	margin-bottom: 30px;
+}
+.footer__navigation_logo{
+	margin-bottom: 30px;
+}
+.footer__navigation-link{
+	margin: 15px 0
+}
+.contacts__logo{
+	margin: 20px 0
+}
+.contacts__box{
+	margin-bottom: 25px;
+}
+.contacts__title{
+	margin-bottom: 5px;
+}
+.media__box-link{
+	width: 85%;
 }
 }
 
